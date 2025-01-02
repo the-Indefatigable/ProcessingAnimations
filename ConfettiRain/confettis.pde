@@ -5,7 +5,7 @@ boolean partyTime = false;
 
 void setup(){
   size(1000,1000);
-   generateConfettis();
+   //generateConfettis();
 }
 
 void mousePressed(){
