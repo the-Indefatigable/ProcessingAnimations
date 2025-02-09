@@ -16,6 +16,7 @@ void draw()
    stroke(255);
    noFill();
    translate(300,300);
+   rotateX(frameCount * 0.01);
    rotateY(frameCount * 0.01);
    box(boxSize);
    
