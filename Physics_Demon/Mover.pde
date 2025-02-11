@@ -47,15 +47,26 @@ class Mover
   // To check for edges 
   void checkEdges()
   {
-    if(pos.x >= width-radius ||  pos.x<= radius)
+    if(pos.x >= width-radius)
     {
-
       vel.x *= -1;
+      pos.x = width-radius;
+    }
+    if( pos.x<= radius)
+    {
+      vel.x *= -1;
+      pos.x *= width-radius;
     }
     
-    if(pos.y >= height-radius || pos.y<= radius)
+    if(pos.y >= height-radius)
     {
       vel.y *= -1;
+      pos.y = height-radius;
+    }
+    if(pos.y<= radius)
+    {
+      vel.y *= -1;
+      pos.y = radius;
     }
   }
   

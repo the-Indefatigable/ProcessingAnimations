@@ -25,5 +25,5 @@ void draw()
   PVector gravity = new PVector(0,0.2);
   m1.applyForce(gravity);
  
-  
+  v
 }
